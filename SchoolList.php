@@ -1,8 +1,8 @@
 <?php
 include './configuration/database.php';
 
-$sql = "SELECT makh,tenkh,sodt,matour,soluong,thoigian from KHACHHANG;";
 
+$sql = "SELECT makh,tenkh,sodt,matour,soluong,thoigian from KHACHHANG;";
 
 if ($connection != null) {
     try {
@@ -12,7 +12,7 @@ if ($connection != null) {
         $dataStudents = $statement->fetchAll();
 
 
-        echo '<h1 class="text-center">DANH SÁCH THÍ SINH DỰ THI</h1>';
+        echo '<h1 class="text-center">DANH SÁCH KHÁCH HÀNG</h1>';
         echo '<table class="table">
         <thead class="thead-dark">
           <tr>
@@ -58,7 +58,7 @@ if ($connection != null) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>RegisList</title>
+    <title>School List</title>
     <style>
         div {
             display: flex;
