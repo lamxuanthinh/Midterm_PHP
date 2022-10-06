@@ -40,15 +40,15 @@ if ($connection != null) {
 
             $tentruongCheck = ''; // vỉe
 
-            if (!empty($matruong)) {
-                foreach ($dataStudents2 as $dataStudent) {
-                    $matruongCheck = $dataStudent['matruong'] ?? '';
-                    $tentruong = $dataStudent['tentruong'] ?? '';
-                    if ($matruong == $matruongCheck) {
-                        $tentruongCheck = $tentruong;
-                    }
-                }
-            }
+            // if (!empty($matruong)) {
+            //     foreach ($dataStudents2 as $dataStudent) {
+            //         $matruongCheck = $dataStudent['matruong'] ?? '';
+            //         $tentruong = $dataStudent['tentruong'] ?? '';
+            //         if ($matruong == $matruongCheck) {
+            //             $tentruongCheck = $tentruong;
+            //         }
+            //     }
+            // }
 
             echo "<tr>";
             echo "<td>$mahs</td>";
